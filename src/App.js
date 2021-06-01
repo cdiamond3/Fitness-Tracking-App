@@ -1,25 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react'
+import Monday from "./Components/Monday"
+import Tuesday from "./Components/Tuesday"
+import Wednesday from "./Components/Wednesday"
+import Thursday from "./Components/Thursday"
+import Friday from "./Components/Friday"
+import Saturday from "./Components/Saturday"
+import Sunday from "./Components/Sunday"
+import FoodCards from './Cards/FoodCards';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  state={
+    allFood:[],
+    myMonday:[],
+    myTuesday:[],
+    myWednesday:[],
+    myThursday:[],
+  }
+componentDidMount(){
+    fetch("http://taco-randomizer.herokuapp.com/")
+      .then(res => res.json())
+      .then(foodItems => {
+        console.log(foodItems)
+        this.setState({allFood: foodItems})
+      })
+  }
+  
+      
+  render() {
+    return (
+      <div>
+        <h1> My Fitness Week </h1>
+        <hr></hr>
+      <Monday />
+      <hr></hr>
+      <Tuesday />
+      <hr></hr>
+      <Wednesday />
+      <hr></hr>
+      <Thursday />
+      <hr></hr>
+      <Friday />
+      <hr></hr>
+      <Saturday />
+      <hr></hr>
+      <Sunday />
+      <hr></hr>
+      <FoodCards food={this.state.allFood}/> All Foods:
+      </div>
+    )
+  }
 }
-
-export default App;
