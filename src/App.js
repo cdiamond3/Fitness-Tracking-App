@@ -8,6 +8,7 @@ import Friday from "./Components/Friday"
 import Saturday from "./Components/Saturday"
 import Sunday from "./Components/Sunday"
 import FoodCards from './Cards/FoodCards';
+import Header from "./Components/Header"
 
 export default class App extends Component {
   state={
@@ -18,19 +19,21 @@ export default class App extends Component {
     myThursday:[],
   }
 componentDidMount(){
-    fetch("http://taco-randomizer.herokuapp.com/")
-      .then(res => res.json())
-      .then(foodItems => {
-        console.log(foodItems)
-        this.setState({allFood: foodItems})
+  fetch("http://localhost:3000/food")
+    .then(res => res.json())
+    .then(allFoodData => {
+      console.log(allFoodData)
+      this.setState({
+        allFood: allFoodData
       })
+    })
   }
   
       
   render() {
     return (
       <div>
-        <h1> My Fitness Week </h1>
+        <Header />
         <hr></hr>
       <Monday />
       <hr></hr>
@@ -46,7 +49,7 @@ componentDidMount(){
       <hr></hr>
       <Sunday />
       <hr></hr>
-      <FoodCards food={this.state.allFood}/> All Foods:
+      <FoodCards foodData={this.state.allFood} />
       </div>
     )
   }

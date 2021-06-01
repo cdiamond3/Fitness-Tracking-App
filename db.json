@@ -1,4 +1,10 @@
 {
-
-
+    "food": [
+        {
+            "id": 1,
+            "name": "Pizza",
+            "Description": "Don't eat this if you are on a diet",
+            "image":"https://fazolis.com/wp-content/uploads/2020/06/P3_20_IMAGES_5under5_Pizza_1200x800.jpg"
+        }
+    ]
 }
