@@ -29,7 +29,6 @@ componentDidMount(){
     //   })
   }
 
-
   render() {
     return (
       <div>
