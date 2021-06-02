@@ -13,12 +13,17 @@ h1 {
 button {
   text-align: center;
   position: relative;
-  left:42.75%;
+  left:35%;
 }
 
+body{
+  background-image: url("https://media.istockphoto.com/vectors/cartoon-interior-inside-home-gym-with-window-vector-vector-id1160924514?k=6&m=1160924514&s=612x612&w=0&h=1Jss3bSpsuf2e1CQpnHQjqqb9a3AosKcQUwVZu0AqAM=");
+}
 
-#foodCard {
+#food-card {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -26,12 +31,33 @@ button {
   height: auto;
 }
 
+/* #WorkOutCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+} */
+
+
+.heading {
+  background-color: rgba(255, 255, 255, 0.753);
+  width: auto;
+  height: auto;
+}
+
 img {
-  width:350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
 }
 
 .food{
-  margin:20px;
-  background-color: rgba(111, 133, 155, 0.767);
+  margin:10px;
+  background-color: rgba(75, 160, 245, 0.562);
+}
+
+h3.Wednesday {
+  background-color: rgba(225, 0, 255, 0.685);
+}
+h3.Tuesday {
+  background-color: rgba(0, 81, 255, 0.685);
 }

@@ -1,78 +1,101 @@
 {
-<<<<<<< HEAD
-    "food": [
-        {
-            "id": 1,
-            "name": "Pizza",
-            "Description": "Don't eat this if you are on a diet",
-            "image":"https://fazolis.com/wp-content/uploads/2020/06/P3_20_IMAGES_5under5_Pizza_1200x800.jpg"
-        }
-    ]
+  "food": [
+    {
+      "id": 1,
+      "days": [],
+      "name": "Pizza",
+      "description": "Do not eat this if you're on a diet",
+      "image": "https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/phut_0.jpg?itok=h30EAnkk"
+    },
+    {
+      "id": 2,
+      "days": [],
+      "name": "Grilled Chicken Salad",
+      "description": "Great tasting and healthy!",
+      "image": "https://gimmedelicious.com/wp-content/uploads/2017/04/GREEK-CHICKEN-AVOCADO-SALAD-.jpg"
+    },
+    {
+      "id": 3,
+      "days": [],
+      "name": "Turkey sandwich",
+      "description": "Easy and inexpensive to make at home!",
+      "image": "https://cdn.kiwilimon.com/recetaimagen/30704/th5-640x426-34299.jpg"
+    },
+    {
+      "id": 4,
+      "days": [],
+      "name": "Salvadoran Pupusas",
+      "description": "Super delicious but better to eat with moderation!",
+      "image": "https://www.sbs.com.au/food/sites/sbs.com.au.food/files/Papusas.jpg"
+    },
+    {
+      "id": 5,
+      "days": [],
+      "name": "Beef Teriyaki Bowl",
+      "description": "Comes with a variety of veggies and good protein source",
+      "image": "https://tsgcookin.com/wp-content/uploads/2012/12/Teriyaki+steak+148-2.jpg"
+    }
+  ],
+  "Workouts": [
+    {
+      "id": 1,
+      "name": "Squats",
+      "description": "Shape those buns!",
+      "image": "https://images.huffingtonpost.com/2014-12-18-900squatcrop.gif"
+    },
+    {
+      "id": 2,
+      "name": "Pushups",
+      "description": "Nice & Controlled",
+      "image": "https://gmb.io/wp-content/uploads/2019/01/full-push-up.gif"
+    },
+    {
+      "id": 3,
+      "name": "Pullups",
+      "description": "Make sure your chin goes above the bar!",
+      "image": "https://64.media.tumblr.com/8e7c463ef31bac6b4fdf180e9b7aedda/tumblr_ngfwpdEsSd1qdjo2ho1_400.gifv"
+    },
+    {
+      "id": 4,
+      "name": "Bench Press",
+      "description": "Grab a buddy to spot you for this one!",
+      "image": "https://thumbs.gfycat.com/CourteousWellwornHammerkop-size_restricted.gif"
+    },
+    {
+      "id": 5,
+      "name": "Jogging",
+      "description": "This one is simple and doesn't require much eqipment!",
+      "image": "https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xOTUxOTI0MC9vcmlnaW4uZ2lmIiwiZXhwaXJlc19hdCI6MTY1NjYwMTQ2M30.leEbYGGo1ADm-vxoMqcmhYOWUHGBxF374GDetX_eRhE/img.gif?quality=80&width=694"
+    }
+  ],
+  "DaysOfTheWeek": [
+    {
+      "id": 1,
+      "name": "Monday"
+    },
+    {
+      "id": 2,
+      "name": "Tuesday"
+    },
+    {
+      "id": 3,
+      "name": "Wednesday"
+    },
+    {
+      "id": 4,
+      "name": "Thursday"
+    },
+    {
+      "id": 5,
+      "name": "Friday"
+    },
+    {
+      "id": 6,
+      "name": "Saturday"
+    },
+    {
+      "id": 7,
+      "name": "Sunday"
+    }
+  ]
 }
-=======
-    "Foods": [
-        {
-           "id": 1,
-            "name": "Pizza",
-            "description": "Do not eat this if you're on a diet",
-            "image": "https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/phut_0.jpg?itok=h30EAnkk"
-        },
-        {
-            "id": 2,
-            "name": "Grilled Chicken Salad",
-            "description": "Great tasting and healthy!",
-            "image": "https://gimmedelicious.com/wp-content/uploads/2017/04/GREEK-CHICKEN-AVOCADO-SALAD-.jpg" 
-        },
-        {
-            "id": 3,
-            "name": "Turkey sandwich",
-            "description": "Easy and inexpensive to make at home!",
-            "image": "https://cdn.kiwilimon.com/recetaimagen/30704/th5-640x426-34299.jpg"  
-        },
-        {
-            "id": 4,
-            "name": "Salvadoran Pupusas",
-            "description": "Super delicious but better to eat with moderation!",
-            "image": "https://www.sbs.com.au/food/sites/sbs.com.au.food/files/Papusas.jpg" 
-        },
-        {
-            "id": 5,
-            "name": "Beef Teriyaki Bowl",
-            "description": "Comes with a variety of veggies and good protein source",
-            "image": "https://tsgcookin.com/wp-content/uploads/2012/12/Teriyaki+steak+148-2.jpg"
-        }
-    ],
-    "Workouts": [
-        {
-           "id": 1,
-           "name":"Squats",
-           "description": "Shape those buns!",
-           "image": "https://images.huffingtonpost.com/2014-12-18-900squatcrop.gif"
-        },
-        {
-            "id": 2,
-            "name":"Pushups",
-            "description": "Nice & Controlled",
-            "image": "https://gmb.io/wp-content/uploads/2019/01/full-push-up.gif"
-         },
-         {
-            "id": 3,
-            "name":"Pullups",
-            "description": "Make sure your chin goes above the bar!",
-            "image": "https://64.media.tumblr.com/8e7c463ef31bac6b4fdf180e9b7aedda/tumblr_ngfwpdEsSd1qdjo2ho1_400.gifv"
-         },
-         {
-            "id": 4,
-            "name":"Bench Press",
-            "description": "Grab a buddy to spot you for this one!",
-            "image": "https://thumbs.gfycat.com/CourteousWellwornHammerkop-size_restricted.gif"
-         },
-         {
-            "id": 5,
-            "name":"Jogging",
-            "description": "This one is simple and doesn't require much eqipment!",
-            "image": "https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xOTUxOTI0MC9vcmlnaW4uZ2lmIiwiZXhwaXJlc19hdCI6MTY1NjYwMTQ2M30.leEbYGGo1ADm-vxoMqcmhYOWUHGBxF374GDetX_eRhE/img.gif?quality=80&width=694"
-         }
-    ]
-}
->>>>>>> 49b0e4a5f244a83ac9009790f1cda3c6682851ab

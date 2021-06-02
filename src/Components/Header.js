@@ -4,8 +4,10 @@ export default function Monday(props) {
     return (
         <div>
             <h1>My Fitness Tracker</h1>
-            <button>Add Meal</button>
-            <button>Add Workout</button>
+            <button 
+            value="See"
+            onClick={() => props.toggleFoodCards("show")}>Show Meals</button>
+            <button>Add A Meal</button>
         </div>
     )
 }
