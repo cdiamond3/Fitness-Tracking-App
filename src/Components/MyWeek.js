@@ -8,7 +8,6 @@ export default function MyWeek({ allFood }) {
             return food.days.includes("Monday")
         })
     }
-
     //map always returns all elements trasnformed.
     //includes only returns booleans value
 

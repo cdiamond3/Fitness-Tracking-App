@@ -2,8 +2,7 @@ import './App.css';
 import React, { Component } from 'react'
 import FoodCardsConatiner from "./Containers/FoodCardsContainer"
 import Header from './Components/Header';
-import { Route } from "react-router-dom"
-import MyWeek from './Components/MyWeek';
+import MyWeek from "./Components/MyWeek"
 
 export default class App extends Component {
   state = {
@@ -27,7 +26,7 @@ export default class App extends Component {
   render() {
     return (
       <div id="bg">
-        {/* <MyWeek allFood={this.state.allFood} /> */}
+        <MyWeek allFood={this.state.allFood} />
         <Header showWeek={this.showMyWeek} />
         <FoodCardsConatiner foodData={this.state.allFood} dayOfWeek={this.state.dayOfTheWeek} />
       </div>
