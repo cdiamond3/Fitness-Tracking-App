@@ -1,10 +1,14 @@
 import React from 'react'
 
-export default function Monday(props) {
+
+export default function Header(props) {
+    const handleClick = () => {
+        props.history.push("/myweek")
+    }
     return (
         <div id="heading">
             <h1>My Fitness Tracker</h1>
-            <button>My Week</button>
+            <button onClick={handleClick}>My Week</button>
         </div>
     )
 }

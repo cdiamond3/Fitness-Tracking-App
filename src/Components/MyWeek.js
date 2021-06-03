@@ -1,19 +1,30 @@
-// import React from 'react'
+import React from 'react'
+import FoodCard from '../Cards/FoodCard'
 
-// export default function MyWeek() {
+export default function MyWeek({ allFood }) {
 
-//     const showMyWeek = () => {
-//         fetch(`http://localhost:3000/food/${food.id}`)
-//             .then(res => res.json())
-//             .then(data => data.food.days.includes("Wednesday") ? "Wednesday" : null)
-//     }
+    const showMyWeek = () => {
+        return allFood.filter(food => {
+            return food.days.includes("Monday")
+        })
+    }
 
-//     return (
-//         <div>
-//             {showMyWeek()}
-//         </div>
-//     )
-// }
+    //map always returns all elements trasnformed.
+    //includes only returns booleans value
+
+    const renderFilteredFoodCards = () => {
+        return showMyWeek().map(food => {
+            return <FoodCard food={food} />
+        })
+    }
+
+    return (
+        <div>
+            <h1>Monday</h1>
+            {renderFilteredFoodCards()}
+        </div>
+    )
+}
 
 
 

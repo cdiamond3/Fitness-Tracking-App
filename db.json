@@ -12,14 +12,18 @@
     },
     {
       "id": 2,
-      "days": [],
+      "days": [
+        "Thursday"
+      ],
       "name": "Grilled Chicken Salad",
       "description": "Great tasting and healthy!",
       "image": "https://gimmedelicious.com/wp-content/uploads/2017/04/GREEK-CHICKEN-AVOCADO-SALAD-.jpg"
     },
     {
       "id": 3,
-      "days": [],
+      "days": [
+        "Monday"
+      ],
       "name": "Turkey sandwich",
       "description": "Easy and inexpensive to make at home!",
       "image": "https://cdn.kiwilimon.com/recetaimagen/30704/th5-640x426-34299.jpg"
