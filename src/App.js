@@ -2,6 +2,7 @@ import './App.css';
 import React, { Component } from 'react'
 import FoodCardsConatiner from"./Containers/FoodCardsContainer"
 import Header from './Components/Header';
+import MyWeek from "./Components/MyWeek"
 
 export default class App extends Component {
   state={
@@ -31,7 +32,7 @@ componentDidMount(){
 
   render() {
     return (
-      <div>
+      <div id="bg">
       <Header />
       <FoodCardsConatiner foodData={this.state.allFood} dayOfWeek={this.state.dayOfTheWeek} />
       </div>

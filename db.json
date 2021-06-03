@@ -2,7 +2,10 @@
   "food": [
     {
       "id": 1,
-      "days": [],
+      "days": [
+        "Monday",
+        "Tuesday"
+      ],
       "name": "Pizza",
       "description": "Do not eat this if you're on a diet",
       "image": "https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/phut_0.jpg?itok=h30EAnkk"

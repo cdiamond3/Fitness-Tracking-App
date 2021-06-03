@@ -2,8 +2,12 @@
   text-align: center;
 }
 
-* {
-  margin: 5px;
+body {
+  width: 750px;
+  border: 15px solid rgba(6, 248, 59, 0.767);
+  padding: 50px;
+  margin: 20px;
+  background-image: url("http://www.transparenttextures.com/patterns/food.png")
 }
 
 h1 {
@@ -13,12 +17,27 @@ h1 {
 button {
   text-align: center;
   position: relative;
-  left:35%;
+  left:45%;
+  border-radius: 100%;
+  box-shadow: 2px 2px 4px #888888;
+  transition: .25s;
 }
 
-body{
-  background-image: url("https://media.istockphoto.com/vectors/cartoon-interior-inside-home-gym-with-window-vector-vector-id1160924514?k=6&m=1160924514&s=612x612&w=0&h=1Jss3bSpsuf2e1CQpnHQjqqb9a3AosKcQUwVZu0AqAM=");
+button:hover {
+  text-align: center;
+  position: relative;
+  left:39%;
+  border-radius: 100%;
+  box-shadow: 2px 2px 4px #888888;
+  background-color: rgb(0, 255, 221);
+  font-size: 125%;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 
 #food-card {
   display: flex;
@@ -26,38 +45,48 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: sticky;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  box-shadow: 10px 10px 8px #888888;
+
+}
+
+#heading {
+  background-color: rgba(137, 240, 134, 0.753);
   width: auto;
   height: auto;
 }
 
-/* #WorkOutCard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-} */
-
-
-.heading {
-  background-color: rgba(255, 255, 255, 0.753);
-  width: auto;
-  height: auto;
-}
-
-img {
-  width: 250px;
-  height: 250px;
+.food-card {
+  width: 100px;
+  height: 50px;
 }
 
 .food{
   margin:10px;
-  background-color: rgba(75, 160, 245, 0.562);
+  background-color: rgba(75, 245, 194, 0.562);
 }
 
 h3.Wednesday {
-  background-color: rgba(225, 0, 255, 0.685);
+  background-color: rgba(255, 136, 0, 0.767);
 }
 h3.Tuesday {
   background-color: rgba(0, 81, 255, 0.685);
+}
+h3.Monday{
+  background-color: rgba(255, 0, 170, 0.685);
+}
+h3.Thursday{
+  background-color: rgba(251, 255, 0, 0.747);
+}
+h3.Friday {
+  background-color: rgba(255, 0, 0, 0.685);
+}
+
+h3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

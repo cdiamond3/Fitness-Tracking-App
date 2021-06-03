@@ -18,7 +18,6 @@ export default function FoodCards({ food, dayOfWeek }) {
     const addBadge = () => {
         if (!days.includes(dayOfWeek)) {
             setDays(days => [
-                console.log(days),
                 ...days, dayOfWeek
             ])
             fetch(`http://localhost:3000/food/${food.id}`, options)
@@ -64,7 +63,7 @@ export default function FoodCards({ food, dayOfWeek }) {
             {renderBadge()}
             <h1>{food.name}</h1>
             <h1>{food.description}</h1>
-            <img alt="Pizza Pizza" src={food.image}></img>
+            <img id="foodCardImage" alt="Pizza Pizza" src={food.image}></img>
         </div>
     )
 }
@@ -72,4 +71,3 @@ export default function FoodCards({ food, dayOfWeek }) {
 
 
 
-// {food.days.includes("Wednesday") ? "True" : False }
