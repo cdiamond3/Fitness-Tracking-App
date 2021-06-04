@@ -48,9 +48,8 @@ img {
 
 #food-card {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   flex-direction: row;
-  position: relative;
   width: 300px;
   height: 150;
   box-shadow: 10px 10px 8px #888888;
@@ -59,16 +58,15 @@ img {
 }
 
 
-
 #food-card:hover{
   box-shadow: 10px 10px 8px #00d9ff;
-  width: 310px;
+  width: 320px;
   height: 350;
 }
 
 #badges{
   display: flex;
-  align-content: space-between;
+  align-content: row;
   position: relative;
   padding: 3px;
   margin: 5px;
@@ -84,23 +82,16 @@ img {
 }
 
 
-.food-card {
+/* .food-card {
   width: 100px;
   height: 50px;
-}
+} */
 
 .food{
   margin:10px;
   background-color: rgba(75, 245, 194, 0.562);
 }
 
-
-h3{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-}
 
 h3.Wednesday {
   background-color: rgba(255, 136, 0, 0.767);

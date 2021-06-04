@@ -13,7 +13,8 @@
     {
       "id": 2,
       "days": [
-        "Thursday"
+        "Monday",
+        "Friday"
       ],
       "name": "Grilled Chicken Salad",
       "description": "Great tasting and healthy!",
@@ -23,7 +24,8 @@
       "id": 3,
       "days": [
         "Monday",
-        "Thursday"
+        "Thursday",
+        "Friday"
       ],
       "name": "Turkey sandwich",
       "description": "Easy and inexpensive to make at home!",
@@ -32,7 +34,8 @@
     {
       "id": 4,
       "days": [
-        "Thursday"
+        "Tuesday",
+        "Friday"
       ],
       "name": "Salvadoran Pupusas",
       "description": "Super delicious but better to eat with moderation!",
@@ -41,7 +44,8 @@
     {
       "id": 5,
       "days": [
-        "Thursday"
+        "Thursday",
+        "Friday"
       ],
       "name": "Beef Teriyaki Bowl",
       "description": "Comes with a variety of veggies and good protein source",
