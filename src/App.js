@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import FoodCardsConatiner from "./Containers/FoodCardsContainer"
 import Header from './Components/Header';
 import MyWeek from "./Components/MyWeek"
+import { Route } from "react-router-dom"
 
 export default class App extends Component {
   state = {
@@ -26,10 +27,15 @@ export default class App extends Component {
   render() {
     return (
       <div id="bg">
-        <MyWeek allFood={this.state.allFood} />
-        <Header showWeek={this.showMyWeek} />
-        <FoodCardsConatiner foodData={this.state.allFood} dayOfWeek={this.state.dayOfTheWeek} />
+        <Header />
+        <Route
+          exact
+          path="/"
+          render={(routerprops) => <FoodCardsConatiner foodData={this.state.allFood} dayOfWeek={this.state.dayOfTheWeek} />}
+        />
+        <Route path="/myweek" render={(routerProps) => <MyWeek allFood={this.state.allFood} />} />
       </div>
+
     )
   }
 }
