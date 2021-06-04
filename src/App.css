@@ -14,6 +14,12 @@ h1 {
   text-align: center;
 }
 
+.big-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 button {
   text-align: center;
   position: relative;
@@ -36,21 +42,39 @@ button:hover {
 img {
   width: 100%;
   height: auto;
+  border-radius: 10%;
 }
 
 
 #food-card {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  width: auto;
-  height: auto;
-  z-index: 1;
+  flex-direction: row;
+  position: relative;
+  width: 300px;
+  height: 150;
   box-shadow: 10px 10px 8px #888888;
+  border-radius: 10%;
+  transition: .5s;
+}
 
+
+
+#food-card:hover{
+  box-shadow: 10px 10px 8px #00d9ff;
+  width: 310px;
+  height: 350;
+}
+
+#badges{
+  display: flex;
+  align-content: space-between;
+  position: relative;
+  padding: 3px;
+  margin: 5px;
+  left: 50%;
+  border-radius: 15%;
+  font-size: 16px;
 }
 
 #heading {
@@ -58,6 +82,7 @@ img {
   width: auto;
   height: auto;
 }
+
 
 .food-card {
   width: 100px;
@@ -67,6 +92,14 @@ img {
 .food{
   margin:10px;
   background-color: rgba(75, 245, 194, 0.562);
+}
+
+
+h3{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 h3.Wednesday {
@@ -85,8 +118,36 @@ h3.Friday {
   background-color: rgba(255, 0, 0, 0.685);
 }
 
-h3{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(66, 163, 71, 0.801);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgba(255, 255, 255, 0.774);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: .25s;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(89, 231, 241);
+  animation: wiggle 75ms infinite;
+  animation-timing-function: linear;   
+}
+
+@keyframes wiggle {
+  0% { transform: translate(2px, 0); }
+  50% { transform: translate(-2px, 0); }
+  100% { transform: translate(2px, 0); }
 }

@@ -32,8 +32,8 @@ export default function FoodCards({ food, dayOfWeek }) {
     return (
         <div id="food-card" className="food" onClick={() => addBadge()}>
             {renderBadge()}
-            <h1>{food.name}</h1>
-            <h1>{food.description}</h1>
+            <h2>{food.name}</h2>
+            <h3>{food.description}</h3>
             <img id="foodCardImage" alt="Pizza Pizza" src={food.image}></img>
         </div>
     )

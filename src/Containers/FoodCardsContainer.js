@@ -11,7 +11,9 @@ export default function FoodItemsContainer(props) {
     
     return (
         <div>
+            <div className="big-container">
             {renderFoodCards()}
+            </div>
         </div>
     )
 }
